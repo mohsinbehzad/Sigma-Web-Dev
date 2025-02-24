@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <caption>Learning Tables in Html</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mohsin</td>
+                <td>22</td>
+                <td>Mardan</td>
+            </tr>
+            <tr>
+                <td>Behzad</td>
+                <td>24</td>
+                <td>G-15</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Khan</td>
+                <!-- colspan means it will take two column space -->
+                <td rowspan="2">KPK</td>
+            </tr>
+            <tr>
+                <td rowspan="2">King</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">footer</td>
+            </tr>
+        </tfoot>
+        <!-- You can write it withour header, body and footer -->
+    </table>
+</body>
+
+</html>
