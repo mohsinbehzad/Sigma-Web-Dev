@@ -1,0 +1,71 @@
+<!-- CSS Selectors allow us to choose specific elements and apply styles to them. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        span {
+            background-color: blue;
+        }
+
+        /* Class Selector */
+        .aqua {
+            background-color: aqua;
+        }
+
+        /* Id Selector */
+        #yellow {
+            background-color: yellow;
+        }
+
+        /* Child Selector */
+        div>p {
+            color: red;
+            background-color: green;
+        }
+
+        /* div > p means paragraph inside div */
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aqua">
+        I am a Div
+        <p>
+            I am Paragrpah inside div
+        </p>
+    </div>
+
+    <div id="yellow">
+        I am second div
+        <article>
+            <p>
+                i am not direct child of div.
+                <!-- to apply style in this grandchildren case, we use descendant Selectors -->
+            </p>
+        </article>
+    </div>
+
+    <span>
+        I am Span
+        <span>
+            I am second span inside
+        </span>
+    </span>
+    <span>
+        I am span outside
+    </span>
+</body>
+
+</html>
