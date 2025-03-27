@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Descendant Selector */
+        div p{
+            color: aqua;
+            background-color: black;
+        }
+        /* div p means, it will apply for every p inside div */
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            I am direct child of div
+        </p>
+    </div>
+    <div>
+        <article>
+            <p>
+                I am not directly child of div.
+            </p>
+        </article>
+    </div>
+</body>
+</html>
