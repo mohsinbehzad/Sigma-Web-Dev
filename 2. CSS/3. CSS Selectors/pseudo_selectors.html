@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoSelector</title>
+    <style>
+        /* pseudo seelctor */
+        a:visited {
+            color: red;
+            /* when you visit a link */
+        }
+
+        a:link {
+            color: darkgoldenrod;
+            /* when you didn't visit the link. */
+        }
+
+        a:active {
+            background-color: purple;
+            /* when you click on it, backgorund will become purple */
+        }
+
+        a:hover {
+            background-color: aqua;
+        }
+
+        p:first-child {
+            background-color: magenta;
+            /* where p is first child of parent, apply this property */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="www.anyweasasdb.com">Go to any website</a>
+    <p>I am a Paragraph</p>
+
+    <main>
+        <p>
+            I am first child of Main
+        </p>
+        <p>
+            I am second child of Main
+        </p>
+    </main>
+
+</body>
+
+</html>
