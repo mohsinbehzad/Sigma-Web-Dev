@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+            height: 100px;
+            border: 2px solid blue;
+        }
+
+        .box1 {
+            margin: 50px;
+        }
+
+        .box2 {
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        Mohsin
+    </div>
+    <div class="box box2">
+        Behzad
+    </div>
+    <div class="box">
+        The Margin Below Mohsin Box and above Behzad Box should be 100px but it is 50px. this is the concept of margin
+        collapse.
+
+    </div>
+</body>
+
+</html>
+
+<!-- Margin Collapse -->
+<!-- Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. -->
+<!-- This does not happen on left and right margins! Only top and bottom margins! -->
