@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: grey;
+        }
+
+        .box1 {
+            color: green;
+        }
+
+        .box2 {
+            color: yellow;
+            padding: 10px;
+            margin: 5px;
+            border: 3px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+            /* box-sizing: border-box -> This means that Height will be given to padding+border+content */
+            /* If we don't use box-sizing: border-box then the height will be assigned to content only */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a Box</div>
+    <div class="box box2">I am another Box</div>
+</body>
+
+</html>
+
+<!-- Margin is outside -->
+<!-- Border is in between Margin and padding -->
+<!-- Padding is inside the border and outside the content -->
+<!-- Margin then Border then Padding then Content -->
+
+<!-- Total Width = Width + Left & Right Margin + Left & Right Border + Left & Right Padding -->
+<!-- Total Height = Height + Top & Bottom Margin + Top & Bottom Border + Top & Bottom Padding -->
